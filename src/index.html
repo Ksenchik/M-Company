@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/css/style.min.css">
+   <title>Document</title>
+</head>
+<body>
+
+  <section class="team">
+    <div class="container">
+      <h2 class="team__title">Моя команда</h2>
+      <div class="card__wrap">
+        <div class="card card-1">
+          <div class="card__title-wrap">
+            <h3 class="card__title">Обученность команды</h3>
+            <img class="card__title-icon card__title-icon1" src="assets/icons/icon-information.svg" alt="">
+            <div class="card__title-info card__title-info1">Оптимист — это не тот, кто первый кричит "Ура!", а тот, кто последний говорит "Капец".</div>
+          </div>
+          <div class="card__chart1-wrap">
+            <div class="card__chart1">
+              <p><span class="card__chart1-numb"></span>%</p>
+            </div>
+            <div class="card__chart1-content">
+              <div class="card__chart1-title">Курсы и траектории</div>
+              <div class="card__chart1-grid">
+                <div class="card__chart1-circle1"></div>
+                <p>Завершено</p>
+                <p id="chart1ComplVal"></p>
+                <p id="chart1ComplTot"></p>
+                
+                <div class="card__chart1-circle2"></div>
+                <p>В процессе</p>
+                <p id="chart1InprocVal"></p>
+                <p id="chart1InprocTot"></p>
+                
+                <div class="card__chart1-circle3"></div>
+                <p>Не пройдено</p>
+                <p id="chart1NotprocVal"></p>
+                <p id="chart1NotprocTot"></p>
+                
+                <div class="card__chart1-circle4"></div>
+                <p>Не начато</p>
+                <p id="chart1NotstartVal"></p>
+                <p id="chart1NotstartTot"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-2">
+          <div class="card__title-wrap">
+            <h3 class="card__title">Прогресс сотрудников</h3>
+            <img class="card__title-icon card__title-icon2" src="assets/icons/icon-information.svg" alt="">
+            <div class="card__title-info card__title-info2">По ночам, у холодильника случается форс-обжор.</div>
+          </div>
+          <div class="card__chart2-wrap">
+            <div class="card__chart2">
+              <p class="card__chart2-info"></p>
+            </div>
+          </div>
+          <p class="card__chart2-text">сотрудников завершили обучение</p>
+        </div>
+
+        <div class="card card-3">
+          <h3 class="card__title">Обратите внимание</h3>
+          <div class="card-3__item">
+            <div class="card-3__item-wrap">
+              <img src="assets/icons/icon-notice.svg" alt="">
+              <p>Не прошли обучение: </p>
+              <p id="untrainedCount"></p>
+            </div>
+          </div>  
+          <div class="card-3__item">
+            <div class="card-3__item-wrap">
+              <img src="assets/icons/icon-notice.svg" alt="">
+              <p>Не заходили на портал: </p>
+              <p id="notVisitedCount"></p>
+            </div>
+          </div>       
+          <div class="card-3__item">
+            <div class="card-3__item-wrap">
+              <img src="assets/icons/icon-notice.svg" alt="">
+              <p>Не были более 2 недель: </p>
+              <p id="absentTwoWeeksCount"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <script src="js/main.min.js"></script>
+</body>
+</html>

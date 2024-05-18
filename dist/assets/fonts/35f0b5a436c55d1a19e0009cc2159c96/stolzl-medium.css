@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Stolzl-Medium';
+	src: url('../fonts/stolzl-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/stolzl-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/stolzl-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/stolzl-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/stolzl-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/stolzl-medium.svg#stolzl-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}

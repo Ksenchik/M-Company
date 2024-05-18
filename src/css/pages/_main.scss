@@ -1,0 +1,248 @@
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-family;
+}
+
+.team {
+  margin-top: 55px;
+
+  &__title {
+    padding-left: 40px;
+    font-family: $second-family2;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+  }
+}
+
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  background-color: $color-bg-card;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px -2px rgba(24, 39, 75, 0.04), 0 2px 4px -2px rgba(24, 39, 75, 0.06);
+  padding: 40px 40px 26px;
+}
+
+.card-1 {
+  width: 44%;
+}
+
+.card-2,
+.card-3 {
+  width: 27%;
+}
+
+.card__title-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__title {
+  font-family: $second-family;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.card__title-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.card__title-info {
+  position: relative;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $color-bg-card;
+  border: 1px solid $color-text;
+  border-radius: 15px;
+  padding: 10px;
+  width: 200px;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.card__title-icon1:hover+.card__title-info1 {
+  display: block;
+}
+
+.card__title-icon2:hover+.card__title-info2 {
+  display: block;
+}
+
+.card__chart1-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.card__chart1 {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  font-size: 32px;
+  border-radius: 50%;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.card__chart1::before,
+.card__chart1::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: white;
+}
+
+.card__chart1::after {
+  background: none;
+}
+
+.card__chart1-title {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: $second-family;
+  margin: 10px 0px;
+}
+
+.card__chart1-grid {
+  display: grid;
+  grid-template-columns: 10px 108px 38px 28px;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    margin: 6px;
+  }
+}
+
+.card__chart1-circle1,
+.card__chart1-circle2,
+.card__chart1-circle3,
+.card__chart1-circle4 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.card__chart1-circle1 {
+  background-color: $color-chart-green;
+}
+
+.card__chart1-circle2 {
+  background-color: $color-chart-yellow;
+}
+
+.card__chart1-circle3 {
+  background-color: $color-chart-red;
+}
+
+.card__chart1-circle4 {
+  background-color: $color-chart-grey;
+}
+
+.card__chart2-wrap {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin: 15px auto 0;
+  overflow: hidden;
+}
+
+.card__chart2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  clip-path: inset(0 0 100px 0);
+  background: white;
+}
+
+.card__chart2-info {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 32px;
+  font-family: $second-family2;
+  margin: 0;
+}
+
+.card__chart2::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 80px;
+  background: white;
+  border-radius: 80px 80px 0 0;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.card__chart2-text {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  max-width: 186px;
+  font-family: $font-family;
+  line-height: 143%;
+  bottom: 26px;
+  left: 56px;
+  z-index: 10;
+}
+
+.card-3__item {
+  border: 1px solid $color-shadow;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin-top: 22px;
+}
+
+.card-3__item:nth-of-type(1) {
+  margin-top: 21px;
+}
+
+.card-3__item {
+  margin-top: 13px;
+}
+
+.card-3__item-wrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+
+  p {
+    margin: 0;
+  }
+}
