@@ -10,11 +10,8 @@ const completed = {
 const chart = document.querySelector('.card__chart2');
 const completedDeg = (completed.value / total.value) * 180;
 
-export function chart2(){
+export function chart2() {
   chart.style.background = `conic-gradient(
-    from 270deg,
-    ${completed.color} 0deg, ${completed.color} ${completedDeg}deg,
-    ${total.color} ${completedDeg}deg, ${total.color} 180deg
-  )`;
-  document.querySelector('.card__chart2-info').textContent = `${completed.value}/${total.value}`;
+    from 270deg at 50% 100%, ${completed.color} 0deg, ${completed.color} ${completedDeg}deg, ${total.color} ${completedDeg}deg, ${total.color} 180deg)`;
+  document.querySelector('.card__chart2-info',).textContent = `${completed.value}/${total.value}`;
 }

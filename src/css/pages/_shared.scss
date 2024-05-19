@@ -2,13 +2,6 @@
   scroll-behavior: smooth;
 }
 
-html {
-  font-size: 10px;
-  @media (max-width: 870px) {
-    font-size: 8px;
-  }
-}
-
 .container{
   max-width: 1090px;
   padding: 20px;

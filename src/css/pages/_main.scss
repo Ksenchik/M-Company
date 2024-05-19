@@ -107,16 +107,16 @@ body {
   }
 }
 
-.card__chart1::before,
-.card__chart1::after {
+.card__chart1::before {
   content: '';
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  background: white;
+  background: $color-bg-card;
 }
 
 .card__chart1::after {
@@ -134,36 +134,26 @@ body {
   display: grid;
   grid-template-columns: 10px 108px 38px 28px;
   align-items: center;
-
   p {
     font-size: 14px;
     margin: 6px;
   }
 }
 
-.card__chart1-circle1,
-.card__chart1-circle2,
-.card__chart1-circle3,
-.card__chart1-circle4 {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
+$colors: (
+  'circle1': $color-chart-green,
+  'circle2': $color-chart-yellow,
+  'circle3': $color-chart-red,
+  'circle4': $color-chart-grey
+);
 
-.card__chart1-circle1 {
-  background-color: $color-chart-green;
-}
-
-.card__chart1-circle2 {
-  background-color: $color-chart-yellow;
-}
-
-.card__chart1-circle3 {
-  background-color: $color-chart-red;
-}
-
-.card__chart1-circle4 {
-  background-color: $color-chart-grey;
+@each $name, $color in $colors {
+  .card__chart1-#{$name} {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $color;
+  }
 }
 
 .card__chart2-wrap {
@@ -171,17 +161,15 @@ body {
   width: 200px;
   height: 100px;
   margin: 15px auto 0;
-  overflow: hidden;
 }
 
 .card__chart2 {
   width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  height: 100px;
+  border-radius: 100px 100px 0 0;
   position: absolute;
-  bottom: -100%;
+  top: 0;
   left: 0;
-  clip-path: inset(0 0 100px 0);
   background: white;
 }
 
